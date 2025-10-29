@@ -20,7 +20,6 @@ const Navbar = () => {
           <NavLink className="navbar-brand ms-2 d-flex" to="/">
             <div className="logo"></div>
           </NavLink>
-          <ThemeToggle />
         </div>
 
         <button
@@ -34,6 +33,9 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul className="navbar-nav align-items-lg-center pb-2">
+            <li className="ms-2">
+              <ThemeToggle />
+            </li>
             <li className="nav-item">
               <NavLink
                 to="/"
