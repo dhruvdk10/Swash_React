@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { banner} from "../Components/Data";
+import { banner } from "../Components/Data";
 
 const AboutUs = () => {
   const [visibleProfiles, setVisibleProfiles] = useState([]);
