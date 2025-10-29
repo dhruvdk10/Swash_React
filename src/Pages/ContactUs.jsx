@@ -57,7 +57,7 @@ export const ContactUs = () => {
                   <a
                     key={info.id}
                     href={info.link}
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "#bbb"}}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -67,7 +67,6 @@ export const ContactUs = () => {
                           icon={info.icon}
                           style={{
                             fontSize: info.iconSize,
-                            color: "#B46A74",
                             animation: "pulse 1.5s infinite",
                           }}
                         />

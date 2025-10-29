@@ -5,28 +5,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const ThemeToggle = () => {
-  const [dark, setDark] = useState(false);
+  const [light, setLight] = useState(false); // Default: dark mode
 
-  // On mount, check localStorage for theme
   useEffect(() => {
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.classList.add("dark-mode");
-      setDark(true);
-    } else {
-      document.documentElement.classList.remove("dark-mode");
-      setDark(false);
+    // Check saved theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+      document.documentElement.classList.add("light-mode");
+      setLight(true);
     }
   }, []);
 
   const toggleTheme = () => {
-    if (dark) {
-      document.documentElement.classList.remove("dark-mode");
-      localStorage.setItem("theme", "light");
-      setDark(false);
-    } else {
-      document.documentElement.classList.add("dark-mode");
+    if (light) {
+      document.documentElement.classList.remove("light-mode");
       localStorage.setItem("theme", "dark");
-      setDark(true);
+      setLight(false);
+    } else {
+      document.documentElement.classList.add("light-mode");
+      localStorage.setItem("theme", "light");
+      setLight(true);
     }
   };
 
@@ -35,16 +33,16 @@ const ThemeToggle = () => {
       className="theme-toggle-button"
       id="modeToggle"
       onClick={toggleTheme}
-      title={dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
-      aria-label={dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      title={light ? "Switch to Dark Mode" : "Switch to Light Mode"}
+      aria-label={light ? "Switch to Dark Mode" : "Switch to Light Mode"}
     >
       <FontAwesomeIcon
         icon={faCircleHalfStroke}
         className="theme-icon fs-4"
         style={{
-          transform: dark ? "scaleX(-1)" : "none",
+          transform: light ? "none" : "scaleX(-1)",
           transition: "transform 0.3s ease, color 0.3s ease",
-          color: dark ? "#f5f5f5" : "#333",
+          color: light ? "#333" : "white",
         }}
       />
     </button>

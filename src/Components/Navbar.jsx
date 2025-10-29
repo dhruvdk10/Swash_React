@@ -18,16 +18,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <div class="d-flex align-items-center">
           <NavLink className="navbar-brand ms-2 d-flex" to="/">
-            <img
-              src="mds_logo_hd.png"
-              class="logo"
-              alt="Logo"
-              style={{ height: "80px", width: "80px" }}
-            />
-            <p class="me-2" style={{ marginTop: "22.5px", lineHeight: 0.8, fontWeight: "bold", color: "#333" }}>
-              <span style={{ fontSize: "large", letterSpacing: "1.5px" }}>SWASH</span><br />
-              <span style={{ fontSize: "10px", letterSpacing: "1px", marginLeft: "5px" }}>JEWELLERS</span>
-            </p>
+            <div className="logo"></div>
           </NavLink>
           <ThemeToggle />
         </div>
@@ -50,7 +41,7 @@ const Navbar = () => {
                   isActive && windowWidth > 991 ? "nav-link active ms-3" : "nav-link ms-3"
                 }
               >
-                Home
+                HOME
               </NavLink>
             </li>
             <li className="nav-item">
@@ -60,17 +51,17 @@ const Navbar = () => {
                   isActive && windowWidth > 991 ? "nav-link active ms-3" : "nav-link ms-3"
                 }
               >
-                About Us
+                ABOUT US
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="..."
                 className={({ isActive }) =>
                   isActive && windowWidth > 991 ? "nav-link active ms-3" : "nav-link ms-3"
                 }
               >
-                Shop
+                SHOP
               </NavLink>
             </li>
             <li className="nav-item dropdown">
@@ -84,7 +75,7 @@ const Navbar = () => {
                 role="button"
                 data-bs-toggle="dropdown"
               >
-                Categories
+                CATEGORIES
               </NavLink>
               <ul className="dropdown-menu">
                 <li>
@@ -100,7 +91,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item ms-2 me-3 my-2">
-              <NavLink className="btn btn-contact" to="/ContactUs">Contact us</NavLink>
+              <NavLink className="btn btn-contact" to="/ContactUs">CONTACT US</NavLink>
             </li>
           </ul>
         </div>
