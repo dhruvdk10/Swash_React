@@ -44,7 +44,7 @@ const ThemeToggle = () => {
         style={{
           transform: light ? "none" : "scaleX(-1)",
           transition: "transform 0.3s ease, color 0.3s ease",
-          color: light ? "rgb(138, 102, 70)" : "#ffd700",
+          color: light ? "rgb(138, 102, 70)" : "#C0A200",
         }}
       />
     </button>

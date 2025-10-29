@@ -83,6 +83,10 @@ select:focus {
   border-bottom: 2px solid rgb(138, 102, 70);
 }
 
+.light-mode .dropdown-menu a:hover {
+  background-color: rgba(138, 102, 70, 0.634);
+}
+
 .light-mode .badge-icon i {
   color: #DFC3BF;
 }
@@ -149,7 +153,8 @@ select:focus {
 .light-mode .contact-card input,
 .light-mode .contact-card textarea {
   background-color: white;
-  color: #b5b5b5;
+  border: 1px solid #c9c9c9b4;
+  color: black
 }
 
 .light-mode .heading::after {
@@ -164,7 +169,7 @@ select:focus {
 }
 
 .light-mode .contact-card input::placeholder {
-  color: #999;
+  color: #a2a2a2;
 }
 
 .light-mode .btn-contact,
@@ -193,6 +198,7 @@ select:focus {
 
 .light-mode .contact-card button:hover {
   background-color: rgb(119, 87, 59);
+  color: white;
 }
 
 .light-mode .contact-card textarea::placeholder {
@@ -477,7 +483,7 @@ img {
   bottom: -6px;
   width: 200px;
   height: 3px;
-  background-color: #ffd700;
+  background-color: #C0A200;
   border-radius: 2px;
 }
 
@@ -514,15 +520,15 @@ img {
 }
 
 .contact-card button {
-  background-color: #ffd700;
+  background-color: #C0A200;
   color: black;
   border: none;
   border-radius: 8px;
 }
 
 .contact-card button:hover {
-  background-color: #ffd700;
-  color: white;
+  background-color: #a88e00;
+  color: black;
 }
 
 .contact-card input,
@@ -585,9 +591,10 @@ img {
 }
 
 .dropdown-menu a:hover {
-  background-color: #B76E79;
-  color: black !important;
+  background-color: #C0A200;
 }
+
+
 
 .btn-contact,
 .btn-contact.active {
@@ -596,7 +603,7 @@ img {
   border-radius: 8px;
   padding: 5px 15px;
   border: none;
-  color: #ffd700 !important;
+  color: #C0A200 !important;
 }
 
 .btn-contact:hover,
@@ -676,7 +683,7 @@ select:focus {
 .fa-envelope,
 .fa-instagram,
 .fa-facebook-f {
-  color: #ffd700 !important;
+  color: #C0A200 !important;
   /* your dark rose tone */
 }
 
