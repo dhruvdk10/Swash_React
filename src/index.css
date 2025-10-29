@@ -75,8 +75,12 @@ select:focus {
   color: black !important;
 }
 
+.light-mode .nav-link:hover {
+  border-bottom: 1px solid rgb(138, 102, 70) !important;
+}
+
 .light-mode .nav-link.active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(138, 102, 70);
 }
 
 .light-mode .badge-icon i {
@@ -124,10 +128,6 @@ select:focus {
 .light-mode .navbar-scrolled {
   background: #333c !important;
   /* dark semi-transparent */
-}
-
-.light-mode .nav-link:hover {
-  border-bottom: 1px solid #ffffff;
 }
 
 .light-mode .profile-details {
@@ -332,7 +332,7 @@ img {
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #D5B300;
 }
 
 .page-container {
