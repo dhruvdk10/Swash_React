@@ -5,14 +5,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const ThemeToggle = () => {
-  const [light, setLight] = useState(false); // Default: dark mode
+  const [light, setLight] = useState(false);
 
+  // On mount, check localStorage for theme
   useEffect(() => {
-    // Check saved theme
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
+    if (localStorage.getItem("theme") === "light") {
       document.documentElement.classList.add("light-mode");
       setLight(true);
+    } else {
+      document.documentElement.classList.remove("light-mode");
+      setLight(false);
     }
   }, []);
 
@@ -42,7 +44,7 @@ const ThemeToggle = () => {
         style={{
           transform: light ? "none" : "scaleX(-1)",
           transition: "transform 0.3s ease, color 0.3s ease",
-          color: light ? "#333" : "white",
+          color: light ? "#363636ff" : "white",
         }}
       />
     </button>

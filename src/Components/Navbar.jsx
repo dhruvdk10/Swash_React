@@ -56,7 +56,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="..."
+                to="/Shop"
                 className={({ isActive }) =>
                   isActive && windowWidth > 991 ? "nav-link active ms-3" : "nav-link ms-3"
                 }

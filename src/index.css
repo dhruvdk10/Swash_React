@@ -122,7 +122,7 @@ select:focus {
 }
 
 .light-mode .navbar-toggler {
-  filter: invert(1);
+  filter: invert(0);
 }
 
 .light-mode .navbar-scrolled {
@@ -288,6 +288,13 @@ img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 991px) {
+  .navbar {
+    height: auto;
+    padding-bottom: 0.5rem;
+  }
+}
+
 .logo {
   background: url("/swash_darklogo.png") no-repeat center center;
   background-size: cover;
@@ -309,6 +316,10 @@ img {
   background: #cccccccc !important;
  } */
 /* dark semi-transparent */
+
+.navbar-toggler {
+  filter: invert(1);
+}
 
 .navbar-toggler {
   border: none;
