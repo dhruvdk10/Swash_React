@@ -13,7 +13,7 @@ import {
 // Home Page Data
 export const banner = [
   { img: "https://images.unsplash.com/photo-1695050049047-54e27a908898?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2073D", alt: "Banner 1" },
-  { img: "https://images.unsplash.com/photo-1705872907488-1a7a35fdc2c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070", alt: "Banner 2" },
+  { img: "https://images.unsplash.com/photo-1624492235740-c283aab78e45?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070", alt: "Banner 2" },
   { img: "https://images.unsplash.com/photo-1644613537735-a0226e8f865d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070", alt: "Banner 3" }
 
 ];

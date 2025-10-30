@@ -117,7 +117,7 @@ select:focus {
 }
 
 .light-mode .carousel-item img {
-  filter: brightness(80%);
+  filter: brightness(100%);
 }
 
 .light-mode .carousel-control-prev-icon,
@@ -235,6 +235,10 @@ select:focus {
 .img_display {
   position: relative;
   overflow: hidden;
+}
+
+.carousel-item img {
+  filter: brightness(80%);
 }
 
 .carousel-control-prev,
