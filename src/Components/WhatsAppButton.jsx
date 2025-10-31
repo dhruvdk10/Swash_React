@@ -8,6 +8,7 @@ const WhatsAppButton = () => {
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
+      style={{animation: "pulse 1.5s infinite"}}
     >
       <FaWhatsapp className="whatsapp-icon" />
     </a>
