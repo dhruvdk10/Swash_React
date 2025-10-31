@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { banner } from "../Components/Data";
+import JewellerySection from "../Components/JewellerySection";
 
 const Shop = () => {
   const [visibleProfiles, setVisibleProfiles] = useState([]);
@@ -43,6 +44,8 @@ const Shop = () => {
 
         </div>
       </section>
+
+      <JewellerySection/>
 
       {/* About Section */}
       {/* <section>

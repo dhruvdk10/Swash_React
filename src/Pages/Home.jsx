@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { banner} from "../Components/Data";
+import JewellerySection from "../Components/JewellerySection";
 
 const Home = () => {
   // Stats Counter Animation
@@ -66,6 +67,9 @@ const Home = () => {
           </button>
         </div>
       </section>
+
+<JewellerySection/>
+
 
       {/* Services Section */}
       {/* <section className="py-5">

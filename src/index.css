@@ -99,6 +99,15 @@ select:focus {
   color: #fff !important;
 }
 
+.light-mode .category-card {
+  background-color: rgba(245, 245, 245, 0.616);
+  color: black;
+}
+
+.light-mode .more-link {
+  color: rgb(138, 102, 70);
+}
+
 .light-mode .founder-container {
   background-color: #333;
   color: white;
@@ -116,7 +125,8 @@ select:focus {
   color: white;
 }
 
-.light-mode .carousel-item img {
+.light-mode .carousel-item img,
+.light-mode .banner {
   filter: brightness(100%);
 }
 
@@ -237,7 +247,8 @@ select:focus {
   overflow: hidden;
 }
 
-.carousel-item img {
+.carousel-item img,
+.banner {
   filter: brightness(80%);
 }
 
@@ -489,6 +500,73 @@ img {
   height: 3px;
   background-color: #C0A200;
   border-radius: 2px;
+}
+
+.jewellery-section {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.category-card {
+  background: #141414ee;
+  border-radius: 12px;
+  padding: 20px 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  /* consistent card height */
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.category-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+.category-card p {
+  font-size: 15px;
+  color: #ccc;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.more-link {
+  display: inline-block;
+  color: #C0A200;
+  font-weight: 500;
+  font-family: "Covenante";
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.banner {
+  margin-top: 25px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
 }
 
 
