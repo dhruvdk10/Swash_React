@@ -63,7 +63,7 @@ export const categories = [
   { name: "Earrings", img: "earrings_icon.png" },
   { name: "Bracelets & Bangles", img: "bracelet_icon.png" },
   { name: "Wedding Jewellery", img: "wedding jwellery_icon.png" },
-  { name: "Mangalsutras", img: "mangalsutra_icon.png" },
+  { name: "Plated Jewellery", img: "mangalsutra_icon.png" },
   // { name: "Necklaces & Pendants", img: "necklace_icon.png" },
   { name: "Gifting", img: "gift_icon.png" },
 ];

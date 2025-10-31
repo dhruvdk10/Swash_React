@@ -567,6 +567,12 @@ img {
 }
 
 .category-card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 15px;
   color: #ccc;
   font-weight: 600;

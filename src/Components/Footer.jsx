@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom text-muted py-3" style={{ textAlign: "center" }}>
-        <span>&copy; 2025 Swash Jwellers. All rights reserved.<br />Made with love by Sweta</span>
+        <span>&copy; 2025 Swash Jewels. All rights reserved.<br />Made with love by Sweta </span>
         <div className="social-icons">
           <div className="footer-links d-flex justify-content-center gap-4 fs-5 mt-2">
             <a
