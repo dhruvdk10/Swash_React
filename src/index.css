@@ -55,7 +55,7 @@ body.modal-open {
 
 .btn.btn-secondary.fw-bold.mb-3:hover {
   background-color: #C0A200;
-  color: white;
+  color: black;
 }
 
 .seprator {
@@ -212,7 +212,8 @@ select:focus {
 }
 
 .light-mode .dropdown-menu a:hover {
-  background-color: #8a6646ab;
+  background-color: #8a6646;
+  color: white;
 }
 
 .light-mode .badge-icon i {
@@ -279,13 +280,13 @@ select:focus {
 .light-mode .fa-user,
 .light-mode .fa-search,
 .light-mode .fa-heart {
-  color: rgb(138, 102, 70);
+  color: #535353;
 }
 
 .light-mode .fa-user:hover,
 .light-mode .fa-search:hover,
 .light-mode .fa-heart:hover {
-  color: #333;
+  color: rgb(138, 102, 70);
 }
 
 
@@ -518,13 +519,13 @@ img {
 .fa-user,
 .fa-search,
 .fa-heart {
-  color: #D5B300;
+  color: #ccc;
 }
 
 .fa-user:hover,
 .fa-search:hover,
 .fa-heart:hover {
-  color: white;
+  color: #D5B300;
 }
 
 .nav-link {
@@ -864,7 +865,8 @@ img {
 }
 
 .dropdown-menu a:hover {
-  background-color: #c0a300ab;
+  background-color: #8c7701;
+  color: white;
 }
 
 
