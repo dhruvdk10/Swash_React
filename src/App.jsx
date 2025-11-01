@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
+import DialogueBox from "./Components/DialogueBox";
 import WhatsAppButton from "./Components/WhatsappButton";
 import Footer from "./Components/Footer";
 import "./index.css";
@@ -29,7 +30,8 @@ const App = () => {
         <Route path="/Projects/Residential" element={<Projects type="Residential" />} />
         <Route path="/Projects/Commercial" element={<Projects type="Commercial" />} /> */}
       </Routes>
-      <WhatsAppButton/>
+      <WhatsAppButton />
+      <DialogueBox />
       <Footer />
     </HashRouter>
   );
