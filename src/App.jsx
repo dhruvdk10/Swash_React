@@ -11,6 +11,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
 import Shop from "./Pages/Shop";
+import SearchModal from "./Components/SearchModal";
 
 const App = () => {
   React.useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
       </Routes>
       <WhatsAppButton />
       <DialogueBox />
+      <SearchModal />
       <Footer />
     </HashRouter>
   );

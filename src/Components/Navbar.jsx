@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faUser, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faUser, faHeart, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
+
 const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showSearch, setShowSearch] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -29,35 +29,19 @@ const Navbar = () => {
 
           <div className="d-flex align-items-center">
             {/* Search */}
+            <ThemeToggle />
             <form
               className="d-flex align-items-center position-relative"
               role="search"
               onSubmit={(e) => e.preventDefault()}
             >
-              <input
-                className={`form-control mx-2 search-input ${showSearch ? "d-block" : "d-none"}`}
-                type="search"
-                placeholder="Search here..."
-                aria-label="Search"
-                autoFocus={showSearch}
-                style={{
-                  height: "35px",
-                  boxShadow: "none",
-                  outline: "none",
-                  transition: "all 0.3s ease",
-                }}
+              <FontAwesomeIcon
+                icon={faSearch}
+                className="fa fa-search fs-4 ms-1"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+                style={{ cursor: "pointer" }}
               />
-              <button
-                className="btn btn-link text-white px-1"
-                type="button"
-                id="search-toggle"
-                onClick={() => setShowSearch(!showSearch)}
-              >
-                <FontAwesomeIcon
-                  icon={faSearch}
-                  className="fa fa-search fs-4"
-                />
-              </button>
             </form>
 
             {/* Profile Dropdown */}
@@ -71,7 +55,7 @@ const Navbar = () => {
               >
                 <FontAwesomeIcon
                   icon={faUser}
-                  className="fa fa-user fs-4 me-2"
+                  className="fa fa-user fs-4 mx-1"
                 />
               </NavLink>
               <ul
@@ -79,11 +63,9 @@ const Navbar = () => {
                 aria-labelledby="profileDropdown"
               >
                 <li>
-                  <li>
-                    <Link className="dropdown-item" to="#">
-                      Profile
-                    </Link>
-                  </li>
+                  <Link className="dropdown-item" to="#">
+                    Profile
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -103,12 +85,19 @@ const Navbar = () => {
               </ul>
             </div>
             <NavLink
-              to="#"
+              className="options d-flex align-items-center text-decoration-none text-white"
+            >
+              <FontAwesomeIcon
+                icon={faHeart}
+                className="fa fa-heart fs-4 mx-1"
+              />
+            </NavLink>
+            <NavLink
               className="options d-flex align-items-center text-decoration-none text-white"
             >
               <FontAwesomeIcon
                 icon={faShoppingCart}
-                className="fa fa-shopping-Cart fs-4 me-2"
+                className="fa fa-shopping-Cart fs-4 mx-1"
               />
             </NavLink>
           </div>
@@ -134,9 +123,6 @@ const Navbar = () => {
             id="navbarNavDropdown"
           >
             <ul className="navbar-nav align-items-lg-center pb-2">
-              <li className="ms-2">
-                <ThemeToggle />
-              </li>
               <li className="nav-item">
                 <NavLink
                   to="/"

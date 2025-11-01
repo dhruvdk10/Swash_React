@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { banner } from "../Components/Data";
 import JewellerySection from "../Components/JewellerySection";
+import ProductCards from "../Components/ProductCards";
 
 const Shop = () => {
   const [visibleProfiles, setVisibleProfiles] = useState([]);
@@ -46,6 +47,7 @@ const Shop = () => {
       </section>
 
       <JewellerySection/>
+      <ProductCards/>
 
       {/* About Section */}
       {/* <section>

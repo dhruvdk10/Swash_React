@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { banner} from "../Components/Data";
+import { banner } from "../Components/Data";
 import JewellerySection from "../Components/JewellerySection";
+import ProductCards from "../Components/ProductCards";
 
 const Home = () => {
   // Stats Counter Animation
@@ -68,7 +69,8 @@ const Home = () => {
         </div>
       </section>
 
-<JewellerySection/>
+      <JewellerySection />
+      <ProductCards />
 
 
       {/* Services Section */}

@@ -67,3 +67,43 @@ export const categories = [
   // { name: "Necklaces & Pendants", img: "necklace_icon.png" },
   { name: "Gifting", img: "gift_icon.png" },
 ];
+
+export const products = [
+  {
+    id: 1,
+    img: "https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGpld2Vscnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900",
+    name: "Crystal Stud Earrings",
+    price: 399,
+    oldPrice: 1299,
+    material: "Sterling Silver",
+    gemstone: "Freshwater Pearl"
+
+  },
+  {
+    id: 2,
+    img: "https://images.unsplash.com/photo-1751429108950-cadfb7d034eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=900",
+    name: "Diamond Solitaire Engagement Ring",
+    price: 399,
+    oldPrice: 1299,
+    material: "18K Gold",
+    gemstone: "Diamond"
+  },
+  {
+    id: 3,
+    img: "https://images.unsplash.com/photo-1708390250220-803af1100d31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=900",
+    name: "Pearl Drop Pendant Necklace",
+    price: 399,
+    oldPrice: 1299,
+    material: "White Gold Plated",
+    gemstone: "Cubic Zirconia"
+  },
+  {
+    id: 4,
+    img: "https://images.unsplash.com/photo-1708390072106-1bc30ad12120?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMxfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=900g",
+    name: "Rose Gold Chain Bracelet",
+    price: 399,
+    oldPrice: 1299,
+    material: "Rose Gold Plated",
+    gemstone: "Gold"
+  },
+];

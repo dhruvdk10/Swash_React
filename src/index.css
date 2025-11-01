@@ -58,6 +58,57 @@ body.modal-open {
   color: black;
 }
 
+/* Remove strong shadows and make modal look flat + minimal */
+.search-modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.input-group-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.search-input {
+  padding: 8px 15px;
+  width: 80%;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #131313;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-btn {
+  background-color: #131313;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #675701;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px #444;
+}
+
 .seprator {
   height: 100px;
 }
@@ -167,6 +218,29 @@ select:focus {
   color: white;
 }
 
+.light-mode .search-modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0px 0px rgba(250, 250, 250, 0);
+}
+
+.light-mode .search-input {
+  background-color: #ddd;
+  color: black;
+}
+
+.light-mode .search-input::placeholder {
+  color: #555;
+}
+
+.light-mode .search-btn {
+  background-color: #131313;
+}
+
+.light-mode .search-btn:hover {
+  background-color: rgb(138, 102, 70);
+}
+
 .light-mode .footer-bottom {
   border-top: 1px solid rgba(0, 0, 0, 0.164);
 }
@@ -255,7 +329,8 @@ select:focus {
 }
 
 .light-mode .carousel-item img,
-.light-mode .banner {
+.light-mode .banner,
+.light-mode .img-container img {
   filter: brightness(100%);
 }
 
@@ -279,12 +354,14 @@ select:focus {
 
 .light-mode .fa-user,
 .light-mode .fa-search,
+.light-mode .fa-heart,
 .light-mode .fa-shopping-Cart {
   color: #535353;
 }
 
 .light-mode .fa-user:hover,
 .light-mode .fa-search:hover,
+.light-mode .fa-heart:hover,
 .light-mode .fa-shopping-Cart:hover {
   color: rgb(138, 102, 70);
 }
@@ -293,6 +370,36 @@ select:focus {
 .light-mode #mainNavbar-scrolled {
   background: #333c !important;
   /* dark semi-transparent */
+}
+
+.light-mode .item-card {
+  background-color: rgba(245, 245, 245, 0.616);
+}
+
+.light-mode .overlay-icons span:hover {
+  background-color: rgb(138, 102, 70);
+  color: white;
+}
+
+.name {
+  font-size: 15px;
+  color: black;
+}
+
+.category {
+  color: #999;
+}
+
+.price {
+  margin: 0;
+  color: white;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #999;
+  font-weight: normal;
+  margin-left: 5px;
 }
 
 .light-mode .profile-details {
@@ -399,7 +506,8 @@ select:focus {
 }
 
 .carousel-item img,
-.banner {
+.banner,
+.img-container img {
   filter: brightness(80%);
 }
 
@@ -518,12 +626,14 @@ img {
 
 .fa-user,
 .fa-search,
+.fa-heart,
 .fa-shopping-Cart {
   color: #ccc;
 }
 
 .fa-user:hover,
 .fa-search:hover,
+.fa-heart:hover,
 .fa-shopping-Cart:hover {
   color: #D5B300;
 }
@@ -552,6 +662,83 @@ img {
   color: #ccc;
 }
 
+.item-card {
+  background-color: #141414ee;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 500px;
+}
+
+.item-card:hover {
+  transform: translateY(-6px);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.overlay-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay-icons {
+  opacity: 1;
+}
+
+.overlay-icons span {
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.overlay-icons span:hover {
+  transform: scale(1.05);
+  background-color: #675701;
+  color: white;
+}
+
+.name {
+  font-size: 15px;
+  color: white;
+}
+
+.category {
+  color: #999;
+}
+
+.price {
+  margin: 0;
+  color: white;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #999;
+  font-weight: normal;
+  margin-left: 5px;
+}
 
 .page-container {
   position: absolute;
