@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faUser, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faUser, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -79,6 +79,13 @@ const Navbar = () => {
                 aria-labelledby="profileDropdown"
               >
                 <li>
+                  <li>
+                    <Link className="dropdown-item" to="#">
+                      Profile
+                    </Link>
+                  </li>
+                </li>
+                <li>
                   <Link
                     className="dropdown-item"
                     to="/login"
@@ -100,8 +107,8 @@ const Navbar = () => {
               className="options d-flex align-items-center text-decoration-none text-white"
             >
               <FontAwesomeIcon
-                icon={faHeart}
-                className="fa fa-heart fs-4 me-2"
+                icon={faShoppingCart}
+                className="fa fa-shopping-Cart fs-4 me-2"
               />
             </NavLink>
           </div>

@@ -279,13 +279,13 @@ select:focus {
 
 .light-mode .fa-user,
 .light-mode .fa-search,
-.light-mode .fa-heart {
+.light-mode .fa-shopping-Cart {
   color: #535353;
 }
 
 .light-mode .fa-user:hover,
 .light-mode .fa-search:hover,
-.light-mode .fa-heart:hover {
+.light-mode .fa-shopping-Cart:hover {
   color: rgb(138, 102, 70);
 }
 
@@ -518,13 +518,13 @@ img {
 
 .fa-user,
 .fa-search,
-.fa-heart {
+.fa-shopping-Cart {
   color: #ccc;
 }
 
 .fa-user:hover,
 .fa-search:hover,
-.fa-heart:hover {
+.fa-shopping-Cart:hover {
   color: #D5B300;
 }
 
