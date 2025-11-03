@@ -37,7 +37,7 @@ const Navbar = () => {
             >
               <FontAwesomeIcon
                 icon={faSearch}
-                className="fa fa-search fs-4 ms-1"
+                className="fa fa-search fs-5 ms-0"
                 data-bs-toggle="modal"
                 data-bs-target="#searchModal"
                 style={{ cursor: "pointer" }}
@@ -55,7 +55,7 @@ const Navbar = () => {
               >
                 <FontAwesomeIcon
                   icon={faUser}
-                  className="fa fa-user fs-4 mx-1"
+                  className="fa fa-user fs-5 mx-1"
                 />
               </NavLink>
               <ul
@@ -89,7 +89,7 @@ const Navbar = () => {
             >
               <FontAwesomeIcon
                 icon={faHeart}
-                className="fa fa-heart fs-4 mx-1"
+                className="fa fa-heart fs-5 mx-1"
               />
             </NavLink>
             <NavLink
@@ -97,7 +97,7 @@ const Navbar = () => {
             >
               <FontAwesomeIcon
                 icon={faShoppingCart}
-                className="fa fa-shopping-Cart fs-4 mx-1"
+                className="fa fa-shopping-Cart fs-5 mx-2 "
               />
             </NavLink>
           </div>
@@ -186,7 +186,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item ms-2 me-3 my-2">
+              <li className="nav-item ms-3 my-2">
                 <NavLink className="btn btn-contact" to="/ContactUs">
                   CONTACT US
                 </NavLink>

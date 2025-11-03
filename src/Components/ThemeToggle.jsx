@@ -40,7 +40,7 @@ const ThemeToggle = () => {
     >
       <FontAwesomeIcon
         icon={faCircleHalfStroke}
-        className="theme-icon fs-4"
+        className="theme-icon fs-5"
         style={{
           transform: light ? "none" : "scaleX(-1)",
           transition: "transform 0.3s ease, color 0.3s ease",

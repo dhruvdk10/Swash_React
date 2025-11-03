@@ -376,9 +376,14 @@ select:focus {
   background-color: rgba(245, 245, 245, 0.616);
 }
 
-.light-mode .overlay-icons span:hover {
-  background-color: rgb(138, 102, 70);
-  color: white;
+.light-mode .overlay-icons span {
+  background-color: white;
+  color: #535353;
+}
+
+.light-mode .overlay-icons .fa-heart:hover {
+  color: #535353 !important;
+  transform: none !important;
 }
 
 .name {
@@ -700,7 +705,8 @@ img {
 }
 
 .overlay-icons span {
-  background: white;
+  background: #141414ee;
+  color: #ccc;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -715,8 +721,11 @@ img {
 
 .overlay-icons span:hover {
   transform: scale(1.05);
-  background-color: #675701;
-  color: white;
+}
+
+.overlay-icons .fa-heart:hover {
+  color: #ccc !important;
+  transform: none !important;
 }
 
 .name {
